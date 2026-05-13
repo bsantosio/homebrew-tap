@@ -5,21 +5,21 @@
 class Claudio < Formula
   desc "Claude CLI proxy — manage AI agents with persistent sessions over your Claude subscription."
   homepage "https://github.com/bsantosio/claudio"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bsantosio/claudio/releases/download/v0.2.0/claudio_0.2.0_darwin_amd64.tar.gz"
-      sha256 "6d5ce67d3a28bbb409bfd20a68bb7501c58097714e5dee99d343eaa9690401b7"
+      url "https://github.com/bsantosio/claudio/releases/download/v0.3.0/claudio_0.3.0_darwin_amd64.tar.gz"
+      sha256 "7a57ff1d6a44e6d46a57a6f658eac68df9f9aa937c6b02148bd895b9b20dca2e"
 
       define_method(:install) do
         bin.install "claudio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bsantosio/claudio/releases/download/v0.2.0/claudio_0.2.0_darwin_arm64.tar.gz"
-      sha256 "cd00ed9c18048c6c8bb91f412b2f8e76c63bbbf9e352cd5d15570e6ea249e274"
+      url "https://github.com/bsantosio/claudio/releases/download/v0.3.0/claudio_0.3.0_darwin_arm64.tar.gz"
+      sha256 "49fe5600c8339bd5ba61f3c55a1499823b5898fe8043c22e5149ac4fa9073e52"
 
       define_method(:install) do
         bin.install "claudio"
@@ -29,15 +29,15 @@ class Claudio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bsantosio/claudio/releases/download/v0.2.0/claudio_0.2.0_linux_amd64.tar.gz"
-      sha256 "f6a72b94c4f8bdb18915ad5bbbb5d728da24c2510b43a5000c39c22241aa81be"
+      url "https://github.com/bsantosio/claudio/releases/download/v0.3.0/claudio_0.3.0_linux_amd64.tar.gz"
+      sha256 "f3e7ba99eeaf5583b47841cfe299677f8c3e1b9ac84f59e343c95ea6c4037a60"
       define_method(:install) do
         bin.install "claudio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bsantosio/claudio/releases/download/v0.2.0/claudio_0.2.0_linux_arm64.tar.gz"
-      sha256 "57ffe5ce2c4c73c8e0c4e0bb40464d29d23ee2281d92770ae8453546bba0effc"
+      url "https://github.com/bsantosio/claudio/releases/download/v0.3.0/claudio_0.3.0_linux_arm64.tar.gz"
+      sha256 "3b86973b88a52a4448b2dda5466925cd9817d1d9d25121fe55d06e513486b59d"
       define_method(:install) do
         bin.install "claudio"
       end
